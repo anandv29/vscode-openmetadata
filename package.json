@@ -1,0 +1,142 @@
+{
+  "name": "openmetadata",
+  "displayName": "OpenMetadata",
+  "description": "Surface OpenMetadata context (table descriptions, columns, DQ, lineage) directly in VS Code",
+  "version": "0.1.0",
+  "publisher": "openmetadata-hackathon",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ammar-A-Khan/vscode-openmetadata"
+  },
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "openmetadata",
+    "data catalog",
+    "sql",
+    "dbt",
+    "metadata"
+  ],
+  "activationEvents": [
+    "onLanguage:sql",
+    "onLanguage:jinja-sql"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "jinja-sql",
+        "aliases": [
+          "Jinja SQL",
+          "jinja-sql",
+          "dbt SQL"
+        ],
+        "extensions": [
+          ".jinja",
+          ".sql.jinja",
+          ".jinja.sql"
+        ]
+      }
+    ],
+    "commands": [
+      {
+        "command": "openmetadata.setup",
+        "title": "OpenMetadata: Setup (Connect)"
+      },
+      {
+        "command": "openmetadata.searchTable",
+        "title": "OpenMetadata: Search Table",
+        "icon": "$(search)"
+      },
+      {
+        "command": "openmetadata.openTable",
+        "title": "OpenMetadata: Open Table in Browser"
+      },
+      {
+        "command": "openmetadata.viewLineage",
+        "title": "OpenMetadata: View Lineage"
+      },
+      {
+        "command": "openmetadata.viewDataQuality",
+        "title": "OpenMetadata: View Data Quality"
+      },
+      {
+        "command": "openmetadata.refreshCatalog",
+        "title": "Refresh",
+        "icon": "$(refresh)"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "openmetadata-sidebar",
+          "title": "OpenMetadata",
+          "icon": "$(database)"
+        }
+      ]
+    },
+    "views": {
+      "openmetadata-sidebar": [
+        {
+          "id": "openmetadataCatalog",
+          "name": "Data Catalog",
+          "icon": "images/catalog.svg"
+        },
+        {
+          "id": "openmetadataDetails",
+          "name": "Table Details",
+          "type": "webview"
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "openmetadata.searchTable",
+          "when": "view == openmetadataCatalog",
+          "group": "navigation"
+        },
+        {
+          "command": "openmetadata.refreshCatalog",
+          "when": "view == openmetadataCatalog",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "OpenMetadata",
+      "properties": {
+        "openmetadata.serverUrl": {
+          "type": "string",
+          "default": "https://sandbox.open-metadata.org",
+          "description": "Base URL of your OpenMetadata instance"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run build:prod",
+    "compile": "npm run check-types && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "build:prod": "npm run check-types && node esbuild.js --production",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src",
+    "test:unit": "tsx test/run-tests.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/vscode": "^1.100.0",
+    "esbuild": "^0.28.0",
+    "eslint": "^9.0.0",
+    "npm-run-all2": "^8.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.0",
+    "typescript-eslint": "^8.58.2"
+  }
+}
