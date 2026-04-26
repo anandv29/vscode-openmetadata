@@ -1,3 +1,5 @@
+>**Disclaimer:** AI assistance was used during the analysis phase and for generating boilerplate code and unit tests; all architecture decisions, core logic, and feature design are our own.
+
 # OpenMetadata for VS Code
 
 Surface table descriptions, column types, data quality results, owners, tags, and lineage directly in VS Code while writing SQL or dbt Jinja — powered by the [OpenMetadata](https://open-metadata.org) REST API.
