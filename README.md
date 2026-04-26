@@ -16,7 +16,7 @@ Surface table descriptions, column types, data quality results, owners, tags, an
 
 ### Hover Tooltips
 
-![Hover Tooltip](images/hover-tooltip.png)
+![Hover Tooltip](images/hover-tooltip.gif)
 
 Hover over any table name, `ref()`, or `source()` call in a `.sql` or `.jinja` file to see a tooltip with:
 - Description, owners, and tags
@@ -36,13 +36,13 @@ Three inline links appear above every line containing a table reference — incl
 
 ### dbt Model Support
 
-![dbt Models](images/dbt-models.png)
+![dbt Models](images/dbt-hover-tooltip.gif)
 
 dbt models are fully supported — hover tooltips, CodeLens actions, and catalog browsing all work in `.jinja` and `.sql.jinja` files the same way they do in plain SQL.
 
 ### Data Catalog Sidebar
 
-![Sidebar](images/sidebar.png)
+![Sidebar](images/sidebar.gif)
 
 Browse your entire OpenMetadata instance from the Activity Bar:
 - Databases, schemas, and tables are lazy-loaded on expand
@@ -59,6 +59,9 @@ Metadata is cached in memory with per-type TTLs to avoid redundant API calls:
 - Ambiguous FQN resolutions (table names that match more than one table in the catalog) are not cached and re-resolve on hovers
 
 ### Table Search
+
+![Table Search](images/table-search.gif)
+
 Fuzzy-search your catalog and open any table directly — triggered from either:
 - The **search icon** in the Data Catalog sidebar
 - The Command Palette (`Ctrl+Shift+P`) → **OpenMetadata: Search Table**
