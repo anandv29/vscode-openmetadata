@@ -157,7 +157,7 @@ Your token is stored using VS Code's `SecretStorage` API — backed by the OS ke
 
 ## Contributing
 
-Contributions are welcome. Please open an issue or pull request on the [GitHub repository](https://github.com/Ammar-A-Khan/vscode-openmetadata).
+Contributions are welcome. Please open an issue or pull request on the [GitHub repository](https://github.com/anandv29/vscode-openmetadata).
 
 **Authors**
 - [Ammar A. Khan](https://github.com/Ammar-A-Khan) — [LinkedIn](https://www.linkedin.com/in/ammar-a-khan-x/)
@@ -167,8 +167,8 @@ Contributions are welcome. Please open an issue or pull request on the [GitHub r
 
 ## Support
 
-- [Report a bug](https://github.com/Ammar-A-Khan/vscode-openmetadata/issues)
-- [Request a feature](https://github.com/Ammar-A-Khan/vscode-openmetadata/issues)
+- [Report a bug](https://github.com/anandv29/vscode-openmetadata/issues)
+- [Request a feature](https://github.com/anandv29/vscode-openmetadata/issues)
 
 ---
 

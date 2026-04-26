@@ -6,7 +6,7 @@
   "publisher": "openmetadata-hackathon",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ammar-A-Khan/vscode-openmetadata"
+    "url": "https://github.com/anandv29/vscode-openmetadata"
   },
   "engines": {
     "vscode": "^1.100.0"

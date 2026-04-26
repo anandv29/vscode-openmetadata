@@ -11,7 +11,7 @@
 ## Setup
 
 ```bash
-git clone https://github.com/Ammar-A-Khan/vscode-openmetadata.git
+git clone https://github.com/anandv29/vscode-openmetadata.git
 cd vscode-openmetadata
 npm install
 ```
