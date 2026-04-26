@@ -1,7 +1,7 @@
 {
   "name": "datacontext-openmetadata",
   "displayName": "OpenMetadata Data Context",
-  "description": "Surface OpenMetadata context (table descriptions, columns, DQ, lineage) directly in your editor",
+  "description": "Surface OpenMetadata context (table descriptions, columns, DQ, lineage) directly in VS Code",
   "version": "0.1.0",
   "icon": "images/icon.png",
   "publisher": "Cygnus-X",
