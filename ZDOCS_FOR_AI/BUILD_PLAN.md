@@ -16,9 +16,8 @@ A VS Code extension that surfaces OpenMetadata context inside the IDE. Hover ove
 | Table descriptions from OpenMetadata | ✅ Done — shown in hover tooltip |
 | Column types from OpenMetadata | ✅ Done — shown in hover tooltip |
 | Tags from OpenMetadata | ✅ Done — shown in hover tooltip |
-| Lineage information | ✅ Done |   
-| Data quality status | ⚠️ Done — not properly tested (sandbox has barely any DQ data) |
-| Recent DQ test results | ⚠️ Done — not properly tested (sandbox has barely any DQ data) |
+| Lineage information | ✅ Done |
+| Recent DQ test results | ✅ Done |
 | Owner information | ✅ Done — shown in hover tooltip |
 | Links to OpenMetadata UI | ✅ Done — CodeLens "Open in OM" + clickable link in tooltip |
 | dbt model support | ✅ Done |
