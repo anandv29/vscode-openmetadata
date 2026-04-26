@@ -1,12 +1,13 @@
 {
-  "name": "openmetadata",
-  "displayName": "OpenMetadata",
-  "description": "Surface OpenMetadata context (table descriptions, columns, DQ, lineage) directly in VS Code",
+  "name": "datacontext-openmetadata",
+  "displayName": "OpenMetadata Data Context",
+  "description": "Surface OpenMetadata context (table descriptions, columns, DQ, lineage) directly in your editor",
   "version": "0.1.0",
-  "publisher": "openmetadata-hackathon",
+  "icon": "images/icon.png",
+  "publisher": "Cygnus-X",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ammar-A-Khan/vscode-openmetadata"
+    "url": "https://github.com/anandv29/OpenMetadata-hackathon"
   },
   "engines": {
     "vscode": "^1.100.0"
