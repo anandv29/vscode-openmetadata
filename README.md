@@ -1,4 +1,4 @@
->**Disclaimer:** AI assistance was used during the analysis phase and for generating boilerplate code and unit tests; all architecture decisions, core logic, and feature design are our own.
+>**Disclaimer: AI assistance was used during the analysis phase and for generating boilerplate code and unit tests; all architecture decisions, core logic, and feature design are our own.**
 
 # OpenMetadata for VS Code
 
